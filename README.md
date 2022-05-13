@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/52999256-760a-422c-ae03-eec77998e608/deploy-status)](https://app.netlify.com/sites/radiant-starlight-b86dab/deploys)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

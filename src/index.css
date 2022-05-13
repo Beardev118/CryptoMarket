@@ -1,34 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800;900&display=swap');
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+@layer base {
+    * {
+        @apply font-[Rubik]
+    }
 }
 
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@layer components {
+    .content {
+        @apply max-w-[740px] mx-auto my-4 py-3 px-4 flex flex-col shadow-[0_0_12px_#18191b] rounded-lg
+    }
 
-  background-color: #26272b;
-  color: #f4f4f4;
-}
-
-a {
-  color: #f4f4f4;
-  text-decoration: none;
-}
-
-h1 {
-  text-align: center;
-  margin: 1rem;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+    .coin-row {
+        @apply flex justify-between items-center bg-[#26272b] shadow-[0_0_12px_#18191b] rounded-lg my-8 mx-4 py-3 px-4
+        hover:transition ease-in-out delay-150 hover:scale-[1.04] hover:cursor-pointer
+    }
 }
